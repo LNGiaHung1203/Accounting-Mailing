@@ -1,16 +1,16 @@
 [
     {
         "name": "Huynh Thi Ngoc Lien",
-        "display_name": "GOTCO Accounting",
+        "display_name": "Accounting-GOTCO",
         "title": "Receivable Accountant / Accounting Dept.",
         "phone": "+84 93 303 5860",
         "email": "accounting@gotco.com.vn"
     },
     {
-        "name": "Nguyen Van A",
-        "display_name": "GOTCO Accounting",
+        "name": "Duong Thi Thu (Mrs. Daisy)",
+        "display_name": "Accounting-GOTCO",
         "title": "Accountant / Accounting Dept.",
-        "phone": "+84 90 000 0000",
-        "email": "accountant2@gotco.com.vn"
+        "phone": "+84 93 303 5860",
+        "email": "accounting@gotco.com.vn"
     }
 ]
