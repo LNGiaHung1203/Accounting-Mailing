@@ -116,7 +116,7 @@ def send_single_email(
         # ── 2. Chuẩn bị nội dung ──────────────────────────────────────────
         total_amount = group_df["Số còn phải thu"].sum()
         _sender      = sender or DEFAULT_SENDER
-        DISPLAY_NAME = "GOTCO Accounting"   # tên hiển thị cố định trong hộp thư người nhận
+        DISPLAY_NAME = "Accounting-GOTCO"   # tên hiển thị cố định trong hộp thư người nhận
 
         msg = MIMEMultipart("alternative")
         msg["From"] = formataddr((DISPLAY_NAME, sender_email))

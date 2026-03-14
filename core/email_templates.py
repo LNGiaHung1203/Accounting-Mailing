@@ -155,16 +155,16 @@ def _build_en(customer_name, df_group, report_date, sender):
         <thead>
           <tr><td style="padding: 4px;"></td><td style="padding: 4px;"></td><td style="padding: 4px; text-align: right; font-style: italic; color: #555;">Currency: USD</td></tr>
           <tr style="background-color: #f2f2f2;">
-            <th style="border: 1px solid #000; padding: 8px;">No.</th>
-            <th style="border: 1px solid #000; padding: 8px;">Description</th>
-            <th style="border: 1px solid #000; padding: 8px;">Amount</th>
+            <th style="border: 1px solid #000; padding: 5px;">No.</th>
+            <th style="border: 1px solid #000; padding: 5px;">Description</th>
+            <th style="border: 1px solid #000; padding: 5px;">Amount</th>
           </tr>
         </thead>
         <tbody>
           {rows_html}
           <tr style="font-weight: bold;">
-            <td colspan="2" style="border: 1px solid #000; padding: 8px; text-align: right;">Total</td>
-            <td style="border: 1px solid #000; padding: 8px; text-align: right;">{format_currency_usd(sum_ngoai_te)}</td>
+            <td colspan="2" style="border: 1px solid #000; padding: 5px; text-align: right;">Total</td>
+            <td style="border: 1px solid #000; padding: 5px; text-align: right;">{format_currency_usd(sum_ngoai_te)}</td>
           </tr>
         </tbody>
       </table>
@@ -262,37 +262,37 @@ def _build_vn_light(customer_name, df_group, report_date, sender):
       <table style="border-collapse: collapse; width: 900px; text-align: center; margin-top: 15px;">
         <thead>
           <tr style="background-color: #f2f2f2;">
-            <th style="border: 1px solid #000; padding: 8px;">STT</th>
-            <th style="border: 1px solid #000; padding: 8px;">Số hóa đơn</th>
-            <th style="border: 1px solid #000; padding: 8px;">Ngày hóa đơn</th>
-            <th style="border: 1px solid #000; padding: 8px;">Diễn giải</th>
-            <th style="border: 1px solid #000; padding: 8px;">Tổng thanh toán</th>
-            <th style="border: 1px solid #000; padding: 8px;">Đã thanh toán/ cấn trừ</th>
-            <th style="border: 1px solid #000; padding: 8px;">Số còn lại phải thanh toán</th>
-            <th style="border: 1px solid #000; padding: 8px; color: red;">Nhóm nợ</th>
+            <th style="border: 1px solid #000; padding: 5px;">STT</th>
+            <th style="border: 1px solid #000; padding: 5px;">Số hóa đơn</th>
+            <th style="border: 1px solid #000; padding: 5px;">Ngày hóa đơn</th>
+            <th style="border: 1px solid #000; padding: 5px;">Diễn giải</th>
+            <th style="border: 1px solid #000; padding: 5px;">Tổng thanh toán</th>
+            <th style="border: 1px solid #000; padding: 5px;">Đã thanh toán/ cấn trừ</th>
+            <th style="border: 1px solid #000; padding: 5px;">Số còn lại phải thanh toán</th>
+            <th style="border: 1px solid #000; padding: 5px; color: red;">Nhóm nợ</th>
           </tr>
         </thead>
         <tbody>
           {rows_html}
           <tr style="font-weight: bold;">
-            <td colspan="4" style="border: 1px solid #000; padding: 8px; text-align: right;">Tổng cộng:</td>
-            <td style="border: 1px solid #000; padding: 8px; text-align: right;">{format_currency(sum_tong_tt)}</td>
-            <td style="border: 1px solid #000; padding: 8px; text-align: right;">{format_currency(sum_da_tt)}</td>
-            <td style="border: 1px solid #000; padding: 8px; text-align: right;">{format_currency(sum_con_lai)}</td>
-            <td style="border: 1px solid #000; padding: 8px;"></td>
+            <td colspan="4" style="border: 1px solid #000; padding: 5px; text-align: right;">Tổng cộng:</td>
+            <td style="border: 1px solid #000; padding: 5px; text-align: right;">{format_currency(sum_tong_tt)}</td>
+            <td style="border: 1px solid #000; padding: 5px; text-align: right;">{format_currency(sum_da_tt)}</td>
+            <td style="border: 1px solid #000; padding: 5px; text-align: right;">{format_currency(sum_con_lai)}</td>
+            <td style="border: 1px solid #000; padding: 5px;"></td>
           </tr>
           <tr>
-            <td colspan="4" style="border: 1px solid #000; padding: 8px;"></td>
-            <td style="border: 1px solid #000; padding: 8px; text-align: right; font-style: italic;">Trong đó:</td>
-            <td style="border: 1px solid #000; padding: 8px; text-align: left;">Đến hạn/quá hạn thanh toán</td>
-            <td style="border: 1px solid #000; padding: 8px; text-align: right; font-weight: bold; color: red;">{format_currency(sum_den_han)}</td>
-            <td style="border: 1px solid #000; padding: 8px;"></td>
+            <td colspan="4" style="border: 1px solid #000; padding: 5px;"></td>
+            <td style="border: 1px solid #000; padding: 5px; text-align: right; font-style: italic;">Trong đó:</td>
+            <td style="border: 1px solid #000; padding: 5px; text-align: left;">Đến hạn/quá hạn thanh toán</td>
+            <td style="border: 1px solid #000; padding: 5px; text-align: right; font-weight: bold; color: red;">{format_currency(sum_den_han)}</td>
+            <td style="border: 1px solid #000; padding: 5px;"></td>
           </tr>
           <tr>
-            <td colspan="5" style="border: 1px solid #000; padding: 8px;"></td>
-            <td style="border: 1px solid #000; padding: 8px; text-align: left;">Chưa/sắp đến hạn</td>
-            <td style="border: 1px solid #000; padding: 8px; text-align: right; font-weight: bold;">{format_currency(sum_chua_den_han)}</td>
-            <td style="border: 1px solid #000; padding: 8px;"></td>
+            <td colspan="5" style="border: 1px solid #000; padding: 5px;"></td>
+            <td style="border: 1px solid #000; padding: 5px; text-align: left;">Chưa/sắp đến hạn</td>
+            <td style="border: 1px solid #000; padding: 5px; text-align: right; font-weight: bold;">{format_currency(sum_chua_den_han)}</td>
+            <td style="border: 1px solid #000; padding: 5px;"></td>
           </tr>
         </tbody>
       </table>
@@ -387,37 +387,37 @@ def _build_vn_heavy(customer_name, df_group, report_date, sender):
       <table style="border-collapse: collapse; width: 900px; text-align: center; margin-top: 15px;">
         <thead>
           <tr style="background-color: #f2f2f2;">
-            <th style="border: 1px solid #000; padding: 8px;">STT</th>
-            <th style="border: 1px solid #000; padding: 8px;">Số hóa đơn</th>
-            <th style="border: 1px solid #000; padding: 8px;">Ngày hóa đơn</th>
-            <th style="border: 1px solid #000; padding: 8px;">Diễn giải</th>
-            <th style="border: 1px solid #000; padding: 8px;">Tổng thanh toán</th>
-            <th style="border: 1px solid #000; padding: 8px;">Đã thanh toán/ cấn trừ</th>
-            <th style="border: 1px solid #000; padding: 8px;">Số còn lại phải thanh toán</th>
-            <th style="border: 1px solid #000; padding: 8px; color: red;">Nhóm nợ</th>
+            <th style="border: 1px solid #000; padding: 5px;">STT</th>
+            <th style="border: 1px solid #000; padding: 5px;">Số hóa đơn</th>
+            <th style="border: 1px solid #000; padding: 5px;">Ngày hóa đơn</th>
+            <th style="border: 1px solid #000; padding: 5px;">Diễn giải</th>
+            <th style="border: 1px solid #000; padding: 5px;">Tổng thanh toán</th>
+            <th style="border: 1px solid #000; padding: 5px;">Đã thanh toán/ cấn trừ</th>
+            <th style="border: 1px solid #000; padding: 5px;">Số còn lại phải thanh toán</th>
+            <th style="border: 1px solid #000; padding: 5px; color: red;">Nhóm nợ</th>
           </tr>
         </thead>
         <tbody>
           {rows_html}
           <tr style="font-weight: bold;">
-            <td colspan="4" style="border: 1px solid #000; padding: 8px; text-align: right;">Tổng cộng:</td>
-            <td style="border: 1px solid #000; padding: 8px; text-align: right;">{format_currency(sum_tong_tt)}</td>
-            <td style="border: 1px solid #000; padding: 8px; text-align: right;">{format_currency(sum_da_tt)}</td>
-            <td style="border: 1px solid #000; padding: 8px; text-align: right;">{format_currency(sum_con_lai)}</td>
-            <td style="border: 1px solid #000; padding: 8px;"></td>
+            <td colspan="4" style="border: 1px solid #000; padding: 5px; text-align: right;">Tổng cộng:</td>
+            <td style="border: 1px solid #000; padding: 5px; text-align: right;">{format_currency(sum_tong_tt)}</td>
+            <td style="border: 1px solid #000; padding: 5px; text-align: right;">{format_currency(sum_da_tt)}</td>
+            <td style="border: 1px solid #000; padding: 5px; text-align: right;">{format_currency(sum_con_lai)}</td>
+            <td style="border: 1px solid #000; padding: 5px;"></td>
           </tr>
           <tr>
-            <td colspan="4" style="border: 1px solid #000; padding: 8px;"></td>
-            <td style="border: 1px solid #000; padding: 8px; text-align: right; font-style: italic;">Trong đó:</td>
-            <td style="border: 1px solid #000; padding: 8px; text-align: left;">Đến hạn/quá hạn thanh toán</td>
-            <td style="border: 1px solid #000; padding: 8px; text-align: right; font-weight: bold; color: red;">{format_currency(sum_den_han)}</td>
-            <td style="border: 1px solid #000; padding: 8px;"></td>
+            <td colspan="4" style="border: 1px solid #000; padding: 5px;"></td>
+            <td style="border: 1px solid #000; padding: 5px; text-align: right; font-style: italic;">Trong đó:</td>
+            <td style="border: 1px solid #000; padding: 5px; text-align: left;">Đến hạn/quá hạn thanh toán</td>
+            <td style="border: 1px solid #000; padding: 5px; text-align: right; font-weight: bold; color: red;">{format_currency(sum_den_han)}</td>
+            <td style="border: 1px solid #000; padding: 5px;"></td>
           </tr>
           <tr>
-            <td colspan="5" style="border: 1px solid #000; padding: 8px;"></td>
-            <td style="border: 1px solid #000; padding: 8px; text-align: left;">Chưa/sắp đến hạn</td>
-            <td style="border: 1px solid #000; padding: 8px; text-align: right; font-weight: bold;">{format_currency(sum_chua_den_han)}</td>
-            <td style="border: 1px solid #000; padding: 8px;"></td>
+            <td colspan="5" style="border: 1px solid #000; padding: 5px;"></td>
+            <td style="border: 1px solid #000; padding: 5px; text-align: left;">Chưa/sắp đến hạn</td>
+            <td style="border: 1px solid #000; padding: 5px; text-align: right; font-weight: bold;">{format_currency(sum_chua_den_han)}</td>
+            <td style="border: 1px solid #000; padding: 5px;"></td>
           </tr>
         </tbody>
       </table>
@@ -480,7 +480,7 @@ def generate_email_body(customer_name, df_group, total_amount, report_date, lang
 
     html = f"""
     <html>
-    <body style="font-family: Arial, sans-serif; line-height: 1.6; color: #333; max-width: 800px; margin: 20px auto;">
+    <body style="font-family: Tahoma, sans-serif; font-size: 11pt; line-height: 1.2; color: #333; max-width: 800px; margin: 20px;">
       {intro_html}
       {table_html}
       {footer_html}
